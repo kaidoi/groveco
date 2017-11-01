@@ -1,8 +1,8 @@
 #!/usr/bin/php -f
 <?php
 require_once 'lib/docopt.php';
-require_once 'lib/class.Location.php';
-require_once 'lib/class.StoreLocator.php';
+require_once 'src/class.Location.php';
+require_once 'src/class.StoreLocator.php';
 
 /**
  *  find_store.php - Wrapper script for finding nearest store location based on --zip OR --address input
