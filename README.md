@@ -38,5 +38,5 @@ Caveats and Assumptions
 ======================================================================
 * This was my first time utilizing PHPUnit testing framework :-)
 * Docopt.php was not recognizing the Usage patterns properly so I recreated the Usage input and had to add additional validation to the optional arguments in the find_store.php wrapper script
-* Address and zip values are not being validated as "real" address values.  For this project we are assuming the address/zip values passed into the command will be valid.
+* Address and zip input values are not being validated as "real" address values, but utilizes Google's best guess.  For this project we are assuming the address/zip values passed into the command will be valid.
 * Performance considerations: For this project, the list of store locations is small (under 2000) which any server nowadays can iterate through very quickly.  The assumption is that the usage of this project is limited to command line execution via the find_store.php wrapper only.  If this were meant for high volume usage and/or the store list count was much greater, then StoreLocator logic would need to be optimized as such.
