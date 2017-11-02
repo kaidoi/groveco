@@ -62,7 +62,7 @@ class Location
     }
 
     /**
-     * xlateAddressToLatLong - translate an address string (or zip code) to lat/long using Google Geocode API
+     * fetchLatLongFromAddress - translate an address string (or zip code) to lat/long using Google Geocode API
      * @param $address [Required]
      * @return array
      */
